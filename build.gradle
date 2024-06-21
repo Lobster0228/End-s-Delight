@@ -21,6 +21,7 @@ plugins {
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
+apply plugin: "org.spongepowered.mixin"
 
 version = "${minecraft_version}-${mod_version}"
 group = 'cn.foggyhillside.ends_delight'
@@ -98,7 +99,7 @@ repositories {
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 
-    implementation fg.deobf("curse.maven:farmersdelight-398521:4638874")
+    implementation fg.deobf("curse.maven:farmersdelight-398521:5051242")
 }
 
 tasks.named('processResources', ProcessResources).configure {

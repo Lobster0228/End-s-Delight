@@ -10,7 +10,7 @@
       "predicate": {
         "equipment": {
           "mainhand": {
-            "tag": "farmersdelight:tools/knives"
+            "tag": "ends_delight:dragon_loot_tools"
           }
         }
       }

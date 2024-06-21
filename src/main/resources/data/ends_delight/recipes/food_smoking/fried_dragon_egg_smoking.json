@@ -4,5 +4,6 @@
     "item": "ends_delight:liquid_dragon_egg"
   },
   "result": "ends_delight:fried_dragon_egg",
-  "cookingtime": 100
+  "cookingtime": 100,
+  "experience": 0.35
 }

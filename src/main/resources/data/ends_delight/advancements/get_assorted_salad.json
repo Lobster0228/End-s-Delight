@@ -14,7 +14,7 @@
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "ends_delight:get_non_hatchable_dragon_egg",
+  "parent": "ends_delight:the_end_chef",
   "criteria": {
     "assorted_salad": {
       "trigger": "minecraft:inventory_changed",

@@ -1,6 +1,5 @@
 package cn.foggyhillside.ends_delight.events.loot;
 
-
 import com.google.common.base.Suppliers;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
@@ -25,7 +24,7 @@ public class DragonLegAdditionModifier extends LootModifier {
 
     private final Item item;
 
-    protected DragonLegAdditionModifier(LootItemCondition[] conditionsIn, Item item) {
+    public DragonLegAdditionModifier(LootItemCondition[] conditionsIn, Item item) {
         super(conditionsIn);
         this.item = item;
     }

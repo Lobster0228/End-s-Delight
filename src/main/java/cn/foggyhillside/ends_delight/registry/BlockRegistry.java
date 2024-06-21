@@ -26,7 +26,7 @@ public class BlockRegistry {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, EndsDelight.MODID);
 
     public static final RegistryObject<Block> ChorusFruitPie = BLOCKS.register("chorus_fruit_pie",
-            () -> new PieBlock(Block.Properties.copy(Blocks.CAKE), ItemRegistry.ChorusFruitPieSlice));
+            () -> new ChorusFruitPieBlock(BlockBehaviour.Properties.copy(Blocks.CAKE), ItemRegistry.ChorusFruitPieSlice));
     public static final RegistryObject<Block> ChorusSucculent = BLOCKS.register("chorus_succulent",
             () -> new ChorusSucculentBlock(BlockBehaviour.Properties.of().strength(0.0F, 0.0F).mapColor(MapColor.COLOR_PURPLE).lightLevel((state) -> {
                 return 1 + 2 * state.getValue(ChorusSucculentBlock.Succulent);

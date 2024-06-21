@@ -40,5 +40,3 @@ public class ChorusSucculentFeature extends Feature<CountConfiguration> {
         return i > 0;
     }
 }
-
-
