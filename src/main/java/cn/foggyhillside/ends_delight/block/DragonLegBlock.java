@@ -35,13 +35,12 @@ import javax.annotation.Nullable;
 public class DragonLegBlock extends HorizontalDirectionalBlock {
 
     public static final EnumProperty<BedPart> PART = BlockStateProperties.BED_PART;
-    public static final IntegerProperty SERVINGS = IntegerProperty.create("servings", 0, 7);
+    public static final IntegerProperty SERVINGS = IntegerProperty.create("servings", 0, 6);
 
     protected static final VoxelShape[] SHAPES_NORTH_HEAD = new VoxelShape[]{
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(6.0D, 2.0D, 0.0D, 10.0D, 6.0D, 5.0D)),
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(2.0D, 2.0D, 0.0D, 14.0D, 5.0D, 5.0D), Block.box(6.0D, 5.0D, 0.0D, 10.0D, 15.0D, 1.0D)),
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(2.0D, 2.0D, 0.0D, 14.0D, 8.0D, 5.0D), Block.box(6.0D, 8.0D, 0.0D, 10.0D, 15.0D, 1.0D)),
-            Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D),
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(2.0D, 2.0D, 0.0D, 14.0D, 13.0D,3.0D)),
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(2.0D, 2.0D, 0.0D, 14.0D, 13.0D,6.0D)),
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(2.0D, 2.0D, 0.0D, 14.0D, 13.0D, 9.0D)),
@@ -55,7 +54,6 @@ public class DragonLegBlock extends HorizontalDirectionalBlock {
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(2.0D, 2.0D, 10.0D, 14.0D, 13.0D, 16.0D), Block.box(6.0D, 5.0D, 3.0D, 10.0D, 9.0D, 10.0D)),
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(2.0D, 2.0D, 10.0D, 14.0D, 13.0D, 16.0D), Block.box(6.0D, 5.0D, 3.0D, 10.0D, 9.0D, 10.0D)),
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(2.0D, 2.0D, 10.0D, 14.0D, 13.0D, 16.0D), Block.box(6.0D, 5.0D, 3.0D, 10.0D, 9.0D, 10.0D)),
-            Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(2.0D, 2.0D, 10.0D, 14.0D, 13.0D, 16.0D), Block.box(6.0D, 5.0D, 3.0D, 10.0D, 9.0D, 10.0D)),
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(2.0D, 2.0D, 10.0D, 14.0D, 13.0D, 16.0D), Block.box(6.0D, 5.0D, 3.0D, 10.0D, 9.0D, 10.0D))
     };
 
@@ -63,7 +61,6 @@ public class DragonLegBlock extends HorizontalDirectionalBlock {
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(6.0D, 2.0D, 11.0D, 10.0D, 6.0D, 16.0D)),
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(2.0D, 2.0D, 11.0D, 14.0D, 5.0D, 16.0D), Block.box(6.0D, 5.0D, 15.0D, 10.0D, 15.0D, 16.0D)),
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(2.0D, 2.0D, 11.0D, 14.0D, 8.0D, 16.0D), Block.box(6.0D, 8.0D, 15.0D, 10.0D, 15.0D, 16.0D)),
-            Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D),
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(2.0D, 2.0D, 13.0D, 14.0D, 13.0D,16.0D)),
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(2.0D, 2.0D, 10.0D, 14.0D, 13.0D,16.0D)),
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(2.0D, 2.0D, 7.0D, 14.0D, 13.0D, 16.0D)),
@@ -77,7 +74,6 @@ public class DragonLegBlock extends HorizontalDirectionalBlock {
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(2.0D, 2.0D, 0.0D, 14.0D, 13.0D, 6.0D), Block.box(6.0D, 5.0D, 6.0D, 10.0D, 9.0D, 13.0D)),
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(2.0D, 2.0D, 0.0D, 14.0D, 13.0D, 6.0D), Block.box(6.0D, 5.0D, 6.0D, 10.0D, 9.0D, 13.0D)),
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(2.0D, 2.0D, 0.0D, 14.0D, 13.0D, 6.0D), Block.box(6.0D, 5.0D, 6.0D, 10.0D, 9.0D, 13.0D)),
-            Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(2.0D, 2.0D, 0.0D, 14.0D, 13.0D, 6.0D), Block.box(6.0D, 5.0D, 6.0D, 10.0D, 9.0D, 13.0D)),
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(2.0D, 2.0D, 0.0D, 14.0D, 13.0D, 6.0D), Block.box(6.0D, 5.0D, 6.0D, 10.0D, 9.0D, 13.0D))
     };
 
@@ -85,7 +81,6 @@ public class DragonLegBlock extends HorizontalDirectionalBlock {
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(0.0D, 2.0D, 6.0D, 5.0D, 6.0D, 10.0D)),
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(0.0D, 2.0D, 2.0D, 5.0D, 5.0D, 14.0D), Block.box(0.0D, 5.0D, 6.0D, 1.0D, 15.0D, 10.0D)),
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(0.0D, 2.0D, 2.0D, 5.0D, 8.0D, 14.0D), Block.box(0.0D, 8.0D, 6.0D, 1.0D, 15.0D, 10.0D)),
-            Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D),
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(0.0D, 2.0D, 2.0D, 3.0D, 13.0D,14.0D)),
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(0.0D, 2.0D, 2.0D, 6.0D, 13.0D,14.0D)),
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(0.0D, 2.0D, 2.0D, 9.0D, 13.0D, 14.0D)),
@@ -99,7 +94,6 @@ public class DragonLegBlock extends HorizontalDirectionalBlock {
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(10.0D, 2.0D, 2.0D, 16.0D, 13.0D, 14.0D), Block.box(3.0D, 5.0D, 6.0D, 10.0D, 9.0D, 10.0D)),
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(10.0D, 2.0D, 2.0D, 16.0D, 13.0D, 14.0D), Block.box(3.0D, 5.0D, 6.0D, 10.0D, 9.0D, 10.0D)),
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(10.0D, 2.0D, 2.0D, 16.0D, 13.0D, 14.0D), Block.box(3.0D, 5.0D, 6.0D, 10.0D, 9.0D, 10.0D)),
-            Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(10.0D, 2.0D, 2.0D, 16.0D, 13.0D, 14.0D), Block.box(3.0D, 5.0D, 6.0D, 10.0D, 9.0D, 10.0D)),
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(10.0D, 2.0D, 2.0D, 16.0D, 13.0D, 14.0D), Block.box(3.0D, 5.0D, 6.0D, 10.0D, 9.0D, 10.0D))
     };
 
@@ -107,7 +101,6 @@ public class DragonLegBlock extends HorizontalDirectionalBlock {
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(11.0D, 2.0D, 6.0D, 16.0D, 6.0D, 10.0D)),
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(11.0D, 2.0D, 2.0D, 16.0D, 5.0D, 14.0D), Block.box(15.0D, 5.0D, 6.0D, 16.0D, 15.0D, 10.0D)),
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(11.0D, 2.0D, 2.0D, 16.0D, 8.0D, 14.0D), Block.box(15.0D, 8.0D, 6.0D, 16.0D, 15.0D, 10.0D)),
-            Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D),
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(13.0D, 2.0D, 2.0D, 16.0D, 13.0D,14.0D)),
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(10.0D, 2.0D, 2.0D, 16.0D, 13.0D,14.0D)),
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(7.0D, 2.0D, 2.0D, 16.0D, 13.0D, 14.0D)),
@@ -121,14 +114,13 @@ public class DragonLegBlock extends HorizontalDirectionalBlock {
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(0.0D, 2.0D, 2.0D, 6.0D, 13.0D, 14.0D), Block.box(6.0D, 5.0D, 6.0D, 13.0D, 9.0D, 10.0D)),
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(0.0D, 2.0D, 2.0D, 6.0D, 13.0D, 14.0D), Block.box(6.0D, 5.0D, 6.0D, 13.0D, 9.0D, 10.0D)),
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(0.0D, 2.0D, 2.0D, 6.0D, 13.0D, 14.0D), Block.box(6.0D, 5.0D, 6.0D, 13.0D, 9.0D, 10.0D)),
-            Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(0.0D, 2.0D, 2.0D, 6.0D, 13.0D, 14.0D), Block.box(6.0D, 5.0D, 6.0D, 13.0D, 9.0D, 10.0D)),
             Shapes.or(Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(0.0D, 2.0D, 2.0D, 6.0D, 13.0D, 14.0D), Block.box(6.0D, 5.0D, 6.0D, 13.0D, 9.0D, 10.0D))
     };
 
 
     public DragonLegBlock(Properties properties) {
         super(properties);
-        this.registerDefaultState(this.getStateDefinition().any().setValue(FACING, Direction.NORTH).setValue(SERVINGS, 7).setValue(PART, BedPart.HEAD));
+        this.registerDefaultState(this.getStateDefinition().any().setValue(FACING, Direction.NORTH).setValue(SERVINGS, 6).setValue(PART, BedPart.HEAD));
     }
 
     @Override

@@ -31,8 +31,8 @@ public class DragonMeatAdditionModifier extends LootModifier {
 
     @Override
     protected @NotNull ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
-        generatedLoot.add(new ItemStack(item, 2));
-        if (context.getRandom().nextFloat() > 0.5) {
+        generatedLoot.add(new ItemStack(item, 5));
+        if (context.getRandom().nextFloat() > 0.25) {
             generatedLoot.add(new ItemStack(item, 1));
         };
         if (context.getRandom().nextFloat() > 0.5) {

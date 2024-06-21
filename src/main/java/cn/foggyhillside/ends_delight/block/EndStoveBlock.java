@@ -8,6 +8,7 @@ import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.SimpleContainer;
@@ -164,7 +165,7 @@ public class EndStoveBlock extends BaseEntityBlock {
     }
 
     @OnlyIn(Dist.CLIENT)
-    public void animateTick(BlockState stateIn, Level level, BlockPos pos, Random rand) {
+    public void animateTick(BlockState stateIn, Level level, BlockPos pos, RandomSource rand) {
         if ((Boolean)stateIn.getValue(CampfireBlock.LIT)) {
             double x = (double)pos.getX() + 0.5;
             double y = (double)pos.getY();
@@ -182,7 +183,6 @@ public class EndStoveBlock extends BaseEntityBlock {
             level.addParticle(ParticleTypes.SMOKE, x + xOffset, y + yOffset, z + zOffset, 0.0, 0.0, 0.0);
             level.addParticle(ParticleTypes.FLAME, x + xOffset, y + yOffset, z + zOffset, 0.0, 0.0, 0.0);
         }
-
     }
 
     @Nullable
