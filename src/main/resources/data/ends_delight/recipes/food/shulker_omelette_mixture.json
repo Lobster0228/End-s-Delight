@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "forge:eggs"
+      "tag": "ends_delight:eggs"
     },
     {
-      "tag": "forge:shulker_meat"
+      "tag": "c:shulker_meat"
     },
     {
-      "tag": "forge:crops/onion"
+      "tag": "c:crops/onion"
     }
   ],
   "result": {

@@ -1,22 +1,22 @@
 package cn.foggyhillside.ends_delight.config;
 
 import com.google.common.collect.ImmutableList;
-import net.minecraftforge.common.ForgeConfigSpec;
+import io.github.fabricators_of_create.porting_lib.config.ModConfigSpec;
 
 import java.util.List;
 
 public class EDCommonConfigs {
-    public static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
+    public static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
 
-    public static final ForgeConfigSpec SPEC;
+    public static final ModConfigSpec SPEC;
 
-    public static ForgeConfigSpec.ConfigValue<List<? extends String>> END_MOBS;
+    public static ModConfigSpec.ConfigValue<List<? extends String>> END_MOBS;
 
-    public static ForgeConfigSpec.BooleanValue GRISTLE_TELEPORT;
+    public static ModConfigSpec.BooleanValue GRISTLE_TELEPORT;
 
-    public static ForgeConfigSpec.IntValue TELEPORT_RANGE_SIZE;
+    public static ModConfigSpec.IntValue TELEPORT_RANGE_SIZE;
 
-    public static ForgeConfigSpec.IntValue TELEPORT_MAX_HEIGHT;
+    public static ModConfigSpec.IntValue TELEPORT_MAX_HEIGHT;
 
     static {
         BUILDER.push("Configs for End's Delight");

@@ -14,23 +14,19 @@
       "required": false
     },
     {
-      "id": "#forge:tools/swords",
+      "id": "#c:swords",
       "required": false
     },
     {
-      "id": "#forge:swords",
+      "id": "#fabric:swords",
       "required": false
     },
     {
-      "id": "#forge:axes",
+      "id": "#c:axes",
       "required": false
     },
     {
-      "id": "#forge:tools/axes",
-      "required": false
-    },
-    {
-      "id": "#forge:tools/axe",
+      "id": "#fabric:axes",
       "required": false
     }
   ]

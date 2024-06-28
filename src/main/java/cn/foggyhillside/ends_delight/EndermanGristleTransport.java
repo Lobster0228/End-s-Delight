@@ -1,15 +1,13 @@
 package cn.foggyhillside.ends_delight;
 
-import cn.foggyhillside.ends_delight.config.EDCommonConfigs;
-import cn.foggyhillside.ends_delight.registry.DamageTypeRegistry;
-import net.minecraft.core.BlockPos;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.PathfinderMob;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraftforge.common.ForgeHooks;
+import net.minecraft.block.BlockState;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.mob.PathAwareEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.server.world.ServerWorld;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
+import cn.foggyhillside.ends_delight.registry.EDModDamageTypes;
 import vectorwing.farmersdelight.common.registry.ModDamageTypes;
 
 public class EndermanGristleTransport {
@@ -20,15 +18,15 @@ public class EndermanGristleTransport {
         double d2 = entity.getZ();
         double d3 = y;
         boolean flag = false;
-        BlockPos blockpos = BlockPos.containing(x, y, z);
-        Level level = entity.level();
-        if (level.hasChunkAt(blockpos)) {
+        BlockPos blockpos = BlockPos.ofFloored(x, y, z);
+        World world = entity.getWorld();
+        if (world.isChunkLoaded(blockpos)) {
             boolean flag1 = false;
 
-            while (!flag1 && blockpos.getY() > (d1 < level.getMinBuildHeight() ? level.getMinBuildHeight() : d1)) {
-                BlockPos blockpos1 = blockpos.below();
-                BlockState blockstate1 = level.getBlockState(blockpos1);
-                if (blockstate1.blocksMotion() && d3 < (double) (level.getMinBuildHeight() + ((ServerLevel) level).getLogicalHeight() - 2)) {
+            while (!flag1 && blockpos.getY() > (d1 < world.getBottomY() ? world.getBottomY() : d1)) {
+                BlockPos blockpos1 = blockpos.down();
+                BlockState blockstate1 = world.getBlockState(blockpos1);
+                if (blockstate1.blocksMovement() && d3 < (double) (world.getBottomY() + ((ServerWorld) world).getLogicalHeight() - 2)) {
                     flag1 = true;
                 } else {
                     --d3;
@@ -37,16 +35,16 @@ public class EndermanGristleTransport {
             }
 
             if (flag1) {
-                entity.teleportTo(x, d3, z);
-                if (level.noCollision(entity) && !level.containsAnyLiquid(entity.getBoundingBox())) {
+                entity.requestTeleport(x, d3, z);
+                if (world.isSpaceEmpty(entity) && !world.containsFluid(entity.getBoundingBox())) {
                     flag = true;
                 }
                 if (flag) {
-                    if (entity instanceof Player && !((Player) entity).isCreative()) {
+                    if (entity instanceof PlayerEntity && !((PlayerEntity) entity).isCreative()) {
                         if (entity.getHealth() < (entity.getMaxHealth() * 0.3F)) {
-                            entity.hurt(DamageTypeRegistry.getSimpleDamageSource(level, DamageTypeRegistry.ENDERMAN_GRISTLE_TELEPORT), entity.getHealth() * 1.5F);
+                            entity.damage(ModDamageTypes.getSimpleDamageSource(world, EDModDamageTypes.ENDERMAN_GRISTLE_TELEPORT), entity.getHealth() * 1.5F);
                         } else {
-                            entity.hurt(DamageTypeRegistry.getSimpleDamageSource(level, DamageTypeRegistry.ENDERMAN_GRISTLE_TELEPORT), entity.getHealth() * damage);
+                            entity.damage(ModDamageTypes.getSimpleDamageSource(world, EDModDamageTypes.ENDERMAN_GRISTLE_TELEPORT), entity.getHealth() * damage);
                         }
                     }
                 }
@@ -54,15 +52,15 @@ public class EndermanGristleTransport {
         }
 
         if (!flag) {
-            entity.teleportTo(d0, d1, d2);
+            entity.requestTeleport(d0, d1, d2);
             return false;
         } else {
             if (p_20988_) {
-                level.broadcastEntityEvent(entity, (byte) 46);
+                world.sendEntityStatus(entity, (byte) 46);
             }
 
-            if (entity instanceof PathfinderMob) {
-                ((PathfinderMob) entity).getNavigation().stop();
+            if (entity instanceof PathAwareEntity) {
+                ((PathAwareEntity) entity).getNavigation().stop();
             }
 
             return true;
