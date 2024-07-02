@@ -4,8 +4,8 @@
 	"textures": {
 		"1": "ends_delight:block/dragon_bone",
 		"2": "ends_delight:block/dragon_leg_tray",
-		"3": "ends_delight:block/dragon_leg_2",
-		"particle": "ends_delight:block/dragon_leg_2"
+		"3": "ends_delight:block/dragon_leg",
+		"particle": "ends_delight:block/dragon_leg"
 	},
 	"elements": [
 		{
@@ -24,12 +24,12 @@
 			"from": [0, 2, 2],
 			"to": [6, 13, 14],
 			"faces": {
-				"north": {"uv": [9, 0, 12, 5.5], "texture": "#3"},
-				"east": {"uv": [0, 0, 6, 5.5], "texture": "#3"},
-				"south": {"uv": [9, 5.5, 12, 11], "texture": "#3"},
-				"west": {"uv": [0, 5.5, 6, 11], "texture": "#3"},
-				"up": {"uv": [9, 6, 6, 0], "texture": "#3"},
-				"down": {"uv": [9, 6, 6, 12], "texture": "#3"}
+				"north": {"uv": [0, 7, 3, 12.5], "texture": "#3"},
+				"east": {"uv": [7, 0, 13, 5.5], "texture": "#3"},
+				"south": {"uv": [0, 12.5, 3, 7], "texture": "#3"},
+				"west": {"uv": [0, 0, 6, 5.5], "texture": "#3"},
+				"up": {"uv": [3, 12.5, 0, 6.5], "texture": "#3"},
+				"down": {"uv": [16, 0, 13, 6], "texture": "#3"}
 			}
 		},
 		{

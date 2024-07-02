@@ -4,5 +4,6 @@
     "item": "ends_delight:shulker_meat_slice"
   },
   "result": "ends_delight:roasted_shulker_meat_slice",
-  "cookingtime": 200
+  "cookingtime": 200,
+  "experience": 0.35
 }

@@ -3,7 +3,7 @@
 	"texture_size": [32, 32],
 	"textures": {
 		"0": "ends_delight:block/dragon_leg_tray",
-		"1": "ends_delight:block/dragon_leg_1",
+		"1": "ends_delight:block/dragon_leg",
 		"particle": "ends_delight:block/dragon_leg_tray"
 	},
 	"elements": [
@@ -21,25 +21,13 @@
 		},
 		{
 			"from": [4, 2, 2],
-			"to": [7, 13, 14],
-			"faces": {
-				"north": {"uv": [8.5, 11, 7, 5.5], "texture": "#1"},
-				"east": {"uv": [9, 0, 14.5, 5.5], "texture": "#1"},
-				"south": {"uv": [15.5, 5.5, 14, 11], "texture": "#1"},
-				"west": {"uv": [0, 5.5, 6, 11], "texture": "#1"},
-				"up": {"uv": [0, 3, 6, 4.5], "rotation": 90, "texture": "#1"},
-				"down": {"uv": [14.5, 0, 16, 5.5], "texture": "#1"}
-			}
-		},
-		{
-			"from": [7, 2, 2],
 			"to": [16, 13, 14],
 			"faces": {
-				"north": {"uv": [11, 11, 6.5, 5.5], "texture": "#1"},
-				"east": {"uv": [10, 0, 16, 5.5], "texture": "#1"},
-				"south": {"uv": [16, 11, 11.5, 5.5], "texture": "#1"},
-				"west": {"uv": [0, 11.5, 6, 16], "texture": "#1"},
-				"up": {"uv": [0, 0.5, 6, 5], "rotation": 90, "texture": "#1"},
+				"north": {"uv": [9, 12.5, 3, 7], "rotation": 180, "texture": "#1"},
+				"east": {"uv": [10, 6, 16, 11.5], "texture": "#1"},
+				"south": {"uv": [9, 12.5, 3, 7], "texture": "#1"},
+				"west": {"uv": [0, 0, 6, 5.5], "texture": "#1"},
+				"up": {"uv": [3, 6.5, 9, 12.5], "rotation": 180, "texture": "#1"},
 				"down": {"uv": [10, 16, 16, 11.5], "rotation": 90, "texture": "#1"}
 			}
 		}

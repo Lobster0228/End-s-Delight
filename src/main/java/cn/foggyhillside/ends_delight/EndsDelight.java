@@ -33,7 +33,7 @@ public class EndsDelight implements ModInitializer {
 	}
 
 	protected void registerLootTable() {
-		Set<Identifier> scavengingEntityIdList = Set.of(EntityType.ENDERMITE.getLootTableId(), EntityType.ENDER_DRAGON.getLootTableId(), EntityType.SHULKER.getLootTableId());
+		Set<Identifier> scavengingEntityIdList = Set.of(EntityType.ENDERMAN.getLootTableId(), EntityType.ENDERMITE.getLootTableId(), EntityType.ENDER_DRAGON.getLootTableId(), EntityType.SHULKER.getLootTableId());
 		LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
 			Identifier injectId = new Identifier("ends_delight", "inject/" + id.getPath());
 			if (scavengingEntityIdList.contains(id)) {

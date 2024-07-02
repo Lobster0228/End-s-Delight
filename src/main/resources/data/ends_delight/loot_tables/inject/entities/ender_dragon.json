@@ -2,7 +2,7 @@
   "pools": [
     {
       "name": "pool1",
-      "rolls": 2,
+      "rolls": 5,
       "entries": [
         {
           "type": "minecraft:item",
@@ -15,7 +15,7 @@
           "predicate": {
             "equipment": {
               "mainhand": {
-                "tag": "c:tools/knives"
+                "tag": "ends_delight:dragon_loot_tools"
               }
             }
           },
@@ -54,7 +54,7 @@
           "predicate": {
             "equipment": {
               "mainhand": {
-                "tag": "c:tools/knives"
+                "tag": "ends_delight:dragon_loot_tools"
               }
             }
           },
@@ -62,7 +62,7 @@
         },
         {
           "condition": "minecraft:random_chance_with_looting",
-          "chance": 0.5,
+          "chance": 0.75,
           "looting_multiplier": 0.1
         }
       ]
@@ -98,7 +98,7 @@
           "predicate": {
             "equipment": {
               "mainhand": {
-                "tag": "c:tools/knives"
+                "tag": "ends_delight:dragon_loot_tools"
               }
             }
           },
@@ -126,7 +126,7 @@
           "predicate": {
             "equipment": {
               "mainhand": {
-                "tag": "c:tools/knives"
+                "tag": "ends_delight:dragon_loot_tools"
               }
             }
           },
@@ -149,7 +149,7 @@
           "predicate": {
             "equipment": {
               "mainhand": {
-                "tag": "c:tools/knives"
+                "tag": "ends_delight:dragon_loot_tools"
               }
             }
           },
@@ -172,7 +172,7 @@
           "predicate": {
             "equipment": {
               "mainhand": {
-                "tag": "c:tools/knives"
+                "tag": "ends_delight:dragon_loot_tools"
               }
             }
           },

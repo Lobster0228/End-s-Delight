@@ -14,7 +14,8 @@
     ]
   ],
   "result": {
-    "item": "ends_delight:ender_sauce"
+    "item": "ends_delight:chorus_sauce"
   },
-  "cookingtime": 200
+  "cookingtime": 200,
+  "experience": 0.35
 }
