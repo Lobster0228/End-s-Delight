@@ -28,6 +28,6 @@ An addon mod for Farmer's Delight based around adding culinary content to the en
 [[dependencies.${mod_id}]]
 modId="farmersdelight"
 mandatory=true
-versionRange="[1.20.1-1.2.2a,)"
+versionRange="[1.20.1-1.2.4,)"
 ordering="AFTER"
 side="BOTH"

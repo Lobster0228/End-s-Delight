@@ -30,7 +30,7 @@ public class ItemRegistry {
     public static final RegistryObject<Item> EndStoneKnife = ITEMS.register("end_stone_knife",
             () -> new KnifeItem(MaterialRegistry.END_STONE, 0.5F, -2.0F, new Item.Properties()));
     public static final RegistryObject<Item> DragonToothKnife = ITEMS.register("dragon_tooth_knife",
-            () -> new DragonToothKnifeItem(MaterialRegistry.DRAGON_TOOTH, 0.5F, -2.0F, new Item.Properties()));
+            () -> new KnifeItem(MaterialRegistry.DRAGON_TOOTH, 0.5F, -2.0F, new Item.Properties()));
     //Ingredients And Other Foods
     public static final RegistryObject<Item> EnderPearlGrain = ITEMS.register("ender_pearl_grain",
             () -> new Item(new Item.Properties()));
@@ -79,7 +79,7 @@ public class ItemRegistry {
     public static final RegistryObject<Item> ChorusSauce = ITEMS.register("chorus_sauce",
             () -> new ConsumableItem(new Item.Properties().food(FoodList.ChorusSauce).craftRemainder(Items.BOWL).stacksTo(64)));
     public static final RegistryObject<Item> ShulkerOmeletteMixture = ITEMS.register("shulker_omelette_mixture",
-            () -> new ConsumableItem(new Item.Properties().food(FoodList.ShulkerOmeletteMixture).stacksTo(64),true));
+            () -> new ConsumableItem(new Item.Properties().food(FoodList.ShulkerOmeletteMixture),true));
     public static final RegistryObject<Item> ShulkerOmelette = ITEMS.register("shulker_omelette",
             () -> new ConsumableItem(new Item.Properties().food(FoodList.ShulkerOmelette),true));
     public static final RegistryObject<Item> RawEnderSausage = ITEMS.register("raw_ender_sausage",

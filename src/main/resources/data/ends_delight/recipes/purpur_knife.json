@@ -1,13 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "0",
+    "1",
     "0"
   ],
   "key": {
     "0": {
       "item": "minecraft:popped_chorus_fruit"
-    }
+    },
+    "1": [
+      {
+        "item": "minecraft:popped_chorus_fruit"
+      },
+      {
+        "item": "minecraft:purpur_block"
+      }
+    ]
   },
   "result": {
     "item": "ends_delight:purpur_knife"

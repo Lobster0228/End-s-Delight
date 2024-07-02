@@ -57,8 +57,6 @@ public class EndermanGristleItem extends Item {
                     ((Player) entity).getCooldowns().addCooldown(this, 20);
                 }
             }
-
-            return itemstack;
         }
         return itemstack;
     }

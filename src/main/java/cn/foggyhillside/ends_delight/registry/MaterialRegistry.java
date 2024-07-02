@@ -1,6 +1,5 @@
 package cn.foggyhillside.ends_delight.registry;
 
-import cn.foggyhillside.ends_delight.registry.ItemRegistry;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
