@@ -14,7 +14,7 @@
       "item": "ends_delight:ender_pearl_grain"
     }
   ],
-  "needwater": true,
+  "needwater": false,
   "recipe_book_tab": "drinks",
   "result": {
     "item": "ends_delight:bubble_tea"

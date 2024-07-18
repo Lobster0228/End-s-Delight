@@ -6,6 +6,15 @@
     },
     {
       "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "flags": {
+          "is_on_fire": false
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
       "entity": "killer",
       "predicate": {
         "equipment": {
@@ -17,5 +26,5 @@
     }
   ],
   "item": "ends_delight:raw_ender_mite_meat",
-  "type": "ends_delight:shulker_meat"
+  "type": "ends_delight:endermite_meat"
 }
