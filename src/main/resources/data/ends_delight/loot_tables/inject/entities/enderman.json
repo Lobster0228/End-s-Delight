@@ -1,0 +1,32 @@
+{
+  "pools": [
+    {
+      "name": "pool1",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ends_delight:enderman_gristle"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "predicate": {
+            "equipment": {
+              "mainhand": {
+                "tag": "c:tools/knives"
+              }
+            }
+          },
+          "entity": "killer"
+        },
+        {
+          "condition": "minecraft:random_chance_with_looting",
+          "chance": 0.35,
+          "looting_multiplier": 0.1
+        }
+      ]
+    }
+  ]
+}

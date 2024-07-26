@@ -4,9 +4,14 @@
     {
       "tag": "c:raw_dragon_meat"
     },
-    {
-      "item": "minecraft:chorus_fruit"
-    },
+    [
+      {
+        "item": "minecraft:chorus_fruit"
+      },
+      {
+        "item": "ends_delight:chorus_fruit_grain"
+      }
+    ],
     {
       "item": "ends_delight:chorus_succulent"
     },
@@ -26,5 +31,6 @@
   "container": {
     "item": "ends_delight:half_dragon_egg_shell"
   },
-  "cookingtime": 200
+  "cookingtime": 200,
+  "experience": 2.0
 }

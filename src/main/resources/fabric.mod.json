@@ -11,7 +11,7 @@
 		"sources": ""
 	},
 	"license": "MIT License",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/ends_delight/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -36,6 +36,5 @@
 		"farmersdelight": "*"
 	},
 	"suggests": {
-		"another-mod": "*"
 	}
 }

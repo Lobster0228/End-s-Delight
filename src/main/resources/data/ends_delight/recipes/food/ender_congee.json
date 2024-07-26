@@ -17,5 +17,6 @@
   "result": {
     "item": "ends_delight:ender_congee"
   },
-  "cookingtime": 200
+  "cookingtime": 200,
+  "experience": 1.0
 }

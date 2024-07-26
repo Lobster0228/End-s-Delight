@@ -7,6 +7,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroup {
-    public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(new Identifier(EndsDelight.MOD_ID, "main"),
+    public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(new Identifier(EndsDelight.MOD_ID,"main"),
             () -> new ItemStack(ModItem.BubbleTea.get()));
 }

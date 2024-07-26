@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#farmersdelight:tools/knives",
+      "required": false
+    },
+    {
+      "id": "#minecraft:axes",
+      "required": false
+    },
+    {
+      "id": "#minecraft:swords",
+      "required": false
+    },
+    {
+      "id": "#c:swords",
+      "required": false
+    },
+    {
+      "id": "#fabric:swords",
+      "required": false
+    },
+    {
+      "id": "#c:axes",
+      "required": false
+    },
+    {
+      "id": "#fabric:axes",
+      "required": false
+    }
+  ]
+}

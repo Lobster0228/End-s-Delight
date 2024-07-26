@@ -19,5 +19,6 @@
   "result": {
     "item": "ends_delight:bubble_tea"
   },
-  "cookingtime": 200
+  "cookingtime": 200,
+  "experience": 1.0
 }

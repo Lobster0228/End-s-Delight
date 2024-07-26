@@ -1,17 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "0",
-    "1"
-  ],
-  "key": {
-    "0": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "ends_delight:dragon_tooth"
     },
-    "1": {
-      "item": "minecraft:popped_chorus_fruit"
+    {
+      "item": "ends_delight:dragon_egg_shell_knife"
     }
-  },
+  ],
   "result": {
     "item": "ends_delight:dragon_tooth_knife"
   }

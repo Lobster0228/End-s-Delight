@@ -33,13 +33,12 @@ public class DragonLegBlock extends HorizontalFacingBlock {
 
     public static final EnumProperty<BedPart> PART = Properties.BED_PART;
 
-    public static final IntProperty SERVINGS = IntProperty.of("servings", 0, 7);
+    public static final IntProperty SERVINGS = IntProperty.of("servings", 0, 6);
 
     protected static final VoxelShape[] SHAPES_NORTH_HEAD = new VoxelShape[]{
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(6.0D, 2.0D, 0.0D, 10.0D, 6.0D, 5.0D)),
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(2.0D, 2.0D, 0.0D, 14.0D, 5.0D, 5.0D), Block.createCuboidShape(6.0D, 5.0D, 0.0D, 10.0D, 15.0D, 1.0D)),
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(2.0D, 2.0D, 0.0D, 14.0D, 8.0D, 5.0D), Block.createCuboidShape(6.0D, 8.0D, 0.0D, 10.0D, 15.0D, 1.0D)),
-            Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D),
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(2.0D, 2.0D, 0.0D, 14.0D, 13.0D,3.0D)),
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(2.0D, 2.0D, 0.0D, 14.0D, 13.0D,6.0D)),
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(2.0D, 2.0D, 0.0D, 14.0D, 13.0D, 9.0D)),
@@ -53,7 +52,6 @@ public class DragonLegBlock extends HorizontalFacingBlock {
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(2.0D, 2.0D, 10.0D, 14.0D, 13.0D, 16.0D), Block.createCuboidShape(6.0D, 5.0D, 3.0D, 10.0D, 9.0D, 10.0D)),
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(2.0D, 2.0D, 10.0D, 14.0D, 13.0D, 16.0D), Block.createCuboidShape(6.0D, 5.0D, 3.0D, 10.0D, 9.0D, 10.0D)),
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(2.0D, 2.0D, 10.0D, 14.0D, 13.0D, 16.0D), Block.createCuboidShape(6.0D, 5.0D, 3.0D, 10.0D, 9.0D, 10.0D)),
-            VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(2.0D, 2.0D, 10.0D, 14.0D, 13.0D, 16.0D), Block.createCuboidShape(6.0D, 5.0D, 3.0D, 10.0D, 9.0D, 10.0D)),
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(2.0D, 2.0D, 10.0D, 14.0D, 13.0D, 16.0D), Block.createCuboidShape(6.0D, 5.0D, 3.0D, 10.0D, 9.0D, 10.0D))
     };
 
@@ -61,7 +59,6 @@ public class DragonLegBlock extends HorizontalFacingBlock {
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(6.0D, 2.0D, 11.0D, 10.0D, 6.0D, 16.0D)),
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(2.0D, 2.0D, 11.0D, 14.0D, 5.0D, 16.0D), Block.createCuboidShape(6.0D, 5.0D, 15.0D, 10.0D, 15.0D, 16.0D)),
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(2.0D, 2.0D, 11.0D, 14.0D, 8.0D, 16.0D), Block.createCuboidShape(6.0D, 8.0D, 15.0D, 10.0D, 15.0D, 16.0D)),
-            Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D),
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(2.0D, 2.0D, 13.0D, 14.0D, 13.0D,16.0D)),
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(2.0D, 2.0D, 10.0D, 14.0D, 13.0D,16.0D)),
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(2.0D, 2.0D, 7.0D, 14.0D, 13.0D, 16.0D)),
@@ -75,7 +72,6 @@ public class DragonLegBlock extends HorizontalFacingBlock {
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(2.0D, 2.0D, 0.0D, 14.0D, 13.0D, 6.0D), Block.createCuboidShape(6.0D, 5.0D, 6.0D, 10.0D, 9.0D, 13.0D)),
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(2.0D, 2.0D, 0.0D, 14.0D, 13.0D, 6.0D), Block.createCuboidShape(6.0D, 5.0D, 6.0D, 10.0D, 9.0D, 13.0D)),
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(2.0D, 2.0D, 0.0D, 14.0D, 13.0D, 6.0D), Block.createCuboidShape(6.0D, 5.0D, 6.0D, 10.0D, 9.0D, 13.0D)),
-            VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(2.0D, 2.0D, 0.0D, 14.0D, 13.0D, 6.0D), Block.createCuboidShape(6.0D, 5.0D, 6.0D, 10.0D, 9.0D, 13.0D)),
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(2.0D, 2.0D, 0.0D, 14.0D, 13.0D, 6.0D), Block.createCuboidShape(6.0D, 5.0D, 6.0D, 10.0D, 9.0D, 13.0D))
     };
 
@@ -83,7 +79,6 @@ public class DragonLegBlock extends HorizontalFacingBlock {
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(0.0D, 2.0D, 6.0D, 5.0D, 6.0D, 10.0D)),
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(0.0D, 2.0D, 2.0D, 5.0D, 5.0D, 14.0D), Block.createCuboidShape(0.0D, 5.0D, 6.0D, 1.0D, 15.0D, 10.0D)),
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(0.0D, 2.0D, 2.0D, 5.0D, 8.0D, 14.0D), Block.createCuboidShape(0.0D, 8.0D, 6.0D, 1.0D, 15.0D, 10.0D)),
-            Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D),
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(0.0D, 2.0D, 2.0D, 3.0D, 13.0D,14.0D)),
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(0.0D, 2.0D, 2.0D, 6.0D, 13.0D,14.0D)),
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(0.0D, 2.0D, 2.0D, 9.0D, 13.0D, 14.0D)),
@@ -97,7 +92,6 @@ public class DragonLegBlock extends HorizontalFacingBlock {
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(10.0D, 2.0D, 2.0D, 16.0D, 13.0D, 14.0D), Block.createCuboidShape(3.0D, 5.0D, 6.0D, 10.0D, 9.0D, 10.0D)),
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(10.0D, 2.0D, 2.0D, 16.0D, 13.0D, 14.0D), Block.createCuboidShape(3.0D, 5.0D, 6.0D, 10.0D, 9.0D, 10.0D)),
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(10.0D, 2.0D, 2.0D, 16.0D, 13.0D, 14.0D), Block.createCuboidShape(3.0D, 5.0D, 6.0D, 10.0D, 9.0D, 10.0D)),
-            VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(10.0D, 2.0D, 2.0D, 16.0D, 13.0D, 14.0D), Block.createCuboidShape(3.0D, 5.0D, 6.0D, 10.0D, 9.0D, 10.0D)),
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(10.0D, 2.0D, 2.0D, 16.0D, 13.0D, 14.0D), Block.createCuboidShape(3.0D, 5.0D, 6.0D, 10.0D, 9.0D, 10.0D))
     };
 
@@ -105,7 +99,6 @@ public class DragonLegBlock extends HorizontalFacingBlock {
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(11.0D, 2.0D, 6.0D, 16.0D, 6.0D, 10.0D)),
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(11.0D, 2.0D, 2.0D, 16.0D, 5.0D, 14.0D), Block.createCuboidShape(15.0D, 5.0D, 6.0D, 16.0D, 15.0D, 10.0D)),
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(11.0D, 2.0D, 2.0D, 16.0D, 8.0D, 14.0D), Block.createCuboidShape(15.0D, 8.0D, 6.0D, 16.0D, 15.0D, 10.0D)),
-            Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D),
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(13.0D, 2.0D, 2.0D, 16.0D, 13.0D,14.0D)),
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(10.0D, 2.0D, 2.0D, 16.0D, 13.0D,14.0D)),
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(7.0D, 2.0D, 2.0D, 16.0D, 13.0D, 14.0D)),
@@ -119,13 +112,12 @@ public class DragonLegBlock extends HorizontalFacingBlock {
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(0.0D, 2.0D, 2.0D, 6.0D, 13.0D, 14.0D), Block.createCuboidShape(6.0D, 5.0D, 6.0D, 13.0D, 9.0D, 10.0D)),
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(0.0D, 2.0D, 2.0D, 6.0D, 13.0D, 14.0D), Block.createCuboidShape(6.0D, 5.0D, 6.0D, 13.0D, 9.0D, 10.0D)),
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(0.0D, 2.0D, 2.0D, 6.0D, 13.0D, 14.0D), Block.createCuboidShape(6.0D, 5.0D, 6.0D, 13.0D, 9.0D, 10.0D)),
-            VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(0.0D, 2.0D, 2.0D, 6.0D, 13.0D, 14.0D), Block.createCuboidShape(6.0D, 5.0D, 6.0D, 13.0D, 9.0D, 10.0D)),
             VoxelShapes.union(Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.createCuboidShape(0.0D, 2.0D, 2.0D, 6.0D, 13.0D, 14.0D), Block.createCuboidShape(6.0D, 5.0D, 6.0D, 13.0D, 9.0D, 10.0D))
     };
 
     public DragonLegBlock(Settings settings) {
         super(settings);
-        this.setDefaultState((BlockState)((BlockState)((BlockState)this.getStateManager().getDefaultState().with(FACING, Direction.NORTH).with(SERVINGS, 7).with(PART, BedPart.HEAD))));
+        this.setDefaultState((BlockState)((BlockState)((BlockState)this.getStateManager().getDefaultState().with(FACING, Direction.NORTH).with(SERVINGS, 6).with(PART, BedPart.HEAD))));
     }
 
     @Override

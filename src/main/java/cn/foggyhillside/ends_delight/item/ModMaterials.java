@@ -11,7 +11,7 @@ import java.util.function.Supplier;
 
 public enum ModMaterials implements ToolMaterial {
     DRAGON_EGG_SHELL(2, 1250, 4.0F, 2.5F, 5, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{ModItem.DragonEggShell.get()});
+        return Ingredient.ofItems(new ItemConvertible[]{ModItem.HalfDragonEggShell.get()});
     }),
     END_STONE(1, 200, 4.0F, 1.0F, 5, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.END_STONE});

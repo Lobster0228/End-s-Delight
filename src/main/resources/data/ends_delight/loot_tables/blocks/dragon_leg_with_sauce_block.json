@@ -15,20 +15,19 @@
           "condition": "minecraft:block_state_property",
           "block": "ends_delight:dragon_leg_with_sauce_block",
           "properties": {
-            "servings": "7",
+            "servings": "6",
             "part": "head"
-
           }
         }
       ]
     },
     {
       "name": "pool2",
-      "rolls": 2,
+      "rolls": 3,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:bone"
+          "name": "minecraft:bone_meal"
         }
       ],
       "conditions": [
@@ -38,7 +37,7 @@
             "condition": "minecraft:block_state_property",
             "block": "ends_delight:dragon_leg_with_sauce_block",
             "properties": {
-              "servings": "7"
+              "servings": "6"
             }
           }
         }

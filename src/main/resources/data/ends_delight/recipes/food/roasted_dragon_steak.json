@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "ends_delight:ender_sauce"
+      "item": "ends_delight:chorus_sauce"
     },
     {
       "tag": "c:roasted_dragon_meat"
