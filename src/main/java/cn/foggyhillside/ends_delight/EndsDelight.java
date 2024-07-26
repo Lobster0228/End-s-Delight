@@ -1,7 +1,10 @@
 package cn.foggyhillside.ends_delight;
 
+import cn.foggyhillside.ends_delight.config.EDCommonConfigs;
 import cn.foggyhillside.ends_delight.registry.*;
 import cn.foggyhillside.ends_delight.world.gen.ChorusSucculentGeneration;
+import io.github.fabricators_of_create.porting_lib.config.ConfigRegistry;
+import io.github.fabricators_of_create.porting_lib.config.ConfigType;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.minecraft.entity.EntityType;
@@ -16,10 +19,11 @@ import java.util.Set;
 public class EndsDelight implements ModInitializer {
 
 	public static final String MOD_ID = "ends_delight";
-    public static final Logger LOGGER = LoggerFactory.getLogger("modid");
+    public static final Logger LOGGER = LoggerFactory.getLogger("ends_delight");
 
 	@Override
 	public void onInitialize() {
+		ConfigRegistry.registerConfig(EndsDelight.MOD_ID, ConfigType.COMMON, EDCommonConfigs.SPEC);
 		ModTab.registerItemGroup();
 		ModItem.registerModItems();
 		ModBlock.registerModBlocks();
@@ -28,8 +32,6 @@ public class EndsDelight implements ModInitializer {
 		ModConfiguredFeatures.registerConfiguredFeatures();
 		ChorusSucculentGeneration.generateChorusSucculent();
 		this.registerLootTable();
-
-		LOGGER.info("Hello Fabric world!");
 	}
 
 	protected void registerLootTable() {
